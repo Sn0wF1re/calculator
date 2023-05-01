@@ -1,3 +1,7 @@
+let firstNum;
+let operator;
+let secondNum;
+
 const add = (...args) => {
   const sum = args.reduce(
     (accumulator, currentValue) => accumulator + currentValue, 0
@@ -27,9 +31,6 @@ const divide = (...args) => {
   return result;
 };
 console.log(divide(10, 0, 5));
-const firstNum;
-const operator;
-const secondNum;
 
 const operate = (operator, firstNum, secondNum) => {
   if (operator === '+') {
