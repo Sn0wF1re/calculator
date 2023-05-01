@@ -25,3 +25,19 @@ const divide = (...args) => {
   );
   return result;
 };
+
+const firstNum;
+const operator;
+const secondNum;
+
+const operate = (operator, firstNum, secondNum) => {
+  if (operator === '+') {
+    add(firstNum, secondNum);
+  } else if (operator === '-') {
+    subtract(firstNum, secondNum);
+  } else if (operator === '*') {
+    multiply(firstNum, secondNum);
+  } else if (operator === '/') {
+    divide(firstNum, secondNum);
+  }
+}
