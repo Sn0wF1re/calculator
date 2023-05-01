@@ -20,12 +20,13 @@ const multiply = (...args) => {
 };
 
 const divide = (...args) => {
+  if (args[1] === 0) return "Cannot Divide by 0";
   const result = args.reduce(
     (accumulator, currentValue) => accumulator / currentValue
   );
   return result;
 };
-
+console.log(divide(10, 0, 5));
 const firstNum;
 const operator;
 const secondNum;
